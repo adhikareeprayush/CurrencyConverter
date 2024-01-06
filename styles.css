@@ -38,7 +38,7 @@ body {
 
 h1 {
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -104,6 +104,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
   input[type="number"] {
     width: 100%;
+  }
+
+  .copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 0.5rem;
   }
 }
 
