@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <div class="form">
+        <div class="left-form">
+          <select name="originCurrency" id="originCurrency"></select>
+          <input type="number" id="originAmount" placeholder="Enter amount" />
+        </div>
+        <div class="right-form">
+          <select name="targetCurrency" id="targetCurrency"></select>
+          <input
+            type="number"
+            id="targetAmount"
+            placeholder="Enter amount"
+            disabled
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      Design and Created by <a href="#">Prayush Adhikari</a>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

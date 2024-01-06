@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya", serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.container {
+  height: auto;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #000;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+select {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  outline: none;
+  width: 100px;
+  border-radius: 2px;
+  border: 1px solid black;
+  padding: 5px;
+  width: auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 2px;
+}
+
+.form,
+.left-form,
+.right-form {
+  display: flex;
+}
+
+.form {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-form,
+.right-form {
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: 90%;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .left-form,
+  .right-form {
+    width: 100%;
+  }
+
+  input[type="number"] {
+    width: 100%;
+  }
+}
+
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #212529;
+}
+
+a {
+  text-decoration: none;
+  color: #424769;
+}
+
+a:hover {
+  text-decoration: underline;
+}
